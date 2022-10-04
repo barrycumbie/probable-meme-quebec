@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "mongodb": "^4.10.0"
+  },
+  "name": "probable-meme-quebec",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barrycumbie/probable-meme-quebec.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barrycumbie/probable-meme-quebec/issues"
+  },
+  "homepage": "https://github.com/barrycumbie/probable-meme-quebec#readme"
+}
