@@ -10,26 +10,24 @@ const app = express()
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
-app.set('view engine', 'ejs');
+// app.set('view engine', 'ejs');
 
 app.get('/', function (req, res) {
     // res.sendFile(path.join(__dirname, "index.html" )); 
     // res.send('Hello ' + userName + ' from Node/Express/Heroku');
 
     client.connect(err => {
-        const collection = client.db("test").collection("devices");
+        const collection = client.db("myFirstDatabase").collection("posts");
         console.log('connected!');
         // perform actions on the collection object
        
-        console.log('closed!');
+        // console.log('closed!');
 
-    
-        const result = collection.find().toArray();
-         console.log(result.title);
+        const result = collection.find( { title: "Super Cats"} ); //.toArray();
+         console.log(result.content);
             
-            res.send(result.title);
+            res.send(result.content);
             // client.close();
-        
     });
 
         // res.send(`Hello Express from inside my client connect f/n!`); 
