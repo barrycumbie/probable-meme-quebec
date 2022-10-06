@@ -7,6 +7,8 @@ const client = new MongoClient(process.env.MONGO_URI, { useNewUrlParser: true, u
 const app = express()
 let posts = ''; 
 
+const PORT = process.env.PORT || 3000
+
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 // app.set('view engine', 'ejs');
@@ -53,12 +55,7 @@ app.get('/', async function (req, res) {
 
     });
 
-
-
-    
-
-app.listen(process.env.PORT || 3000,
-  () => console.log(`server is running on port: ${process.env.PORT}` ));
+app.listen(PORT, console.log(`server is running on port: ${PORT}` ));
 
 
 
