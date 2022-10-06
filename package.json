@@ -15,6 +15,10 @@
     "dev": "nodemon ./app2.js",
     "start": "node app2.js"
   },
+   "engines": {
+        "node": "18.x",
+        "npm": "8.x"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/barrycumbie/probable-meme-quebec.git"
