@@ -51,12 +51,8 @@ app.get('/', async function (req, res) {
 
     console.log("results: ", result.title); 
 
-    res.send(`results:  ${ result.title }`); 
-
+   res.send(`results:  ${ result.title }`); 
+// res.send("farts"); 
     });
 
 app.listen(PORT, console.log(`server is running on port: ${PORT}` ));
-
-
-
-
